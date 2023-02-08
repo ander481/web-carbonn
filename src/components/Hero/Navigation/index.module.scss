@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variables';
+
+.navigation {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.nav_content {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: block;
+}
+
+.right {
+    ul {
+        li>a {
+            color: $light;
+        }
+    }
+}
