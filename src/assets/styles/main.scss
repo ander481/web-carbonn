@@ -14,37 +14,33 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
 	color: $dark;
-	max-width: 50rem;
+	font-family: 'Blinker', Arial, sans-serif;
+	font-weight: 400;
 }
 h1 {
-	font-weight: bold;
+
 	line-height: 1.05;
-	margin-bottom: 1.7239rem;
 }
 h2 {
-	font-weight: bold;
 	line-height: 1.15;
-	margin: 2.1393rem 0 1.5rem;
+	font-size: 40px;
 }
 h3 {
-	font-weight: bold;
 	line-height: 1.25;
-	margin: 1.86375rem 0 1rem;
+	font-size: 32px;
 }
-h4 {
-	font-weight: bold;
-	margin: 1.5rem 0 1rem;
-}
-h5 {
-	font-weight: bold;
-	margin-top: 1.5rem;
-}
+
 p {
 	color: $dark;
-	margin-bottom: m(math.div(2, 3));
+	font-size: 20px;
+	margin-top: 18px;
+	font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+span {
+	display: inline-block;
 }
 /*
 a {
@@ -77,8 +73,45 @@ hr {
 }
 
 .container {
+	position: relative;
     width: 1400px;
     height: 100%;
     padding: 0;
     margin: 0 auto;
+	padding: 0 50px;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 1140px;
+		padding: 0 42px;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.container {
+		width: 960px;
+		padding: 0 36px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.container {
+		width: 720px;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
 }

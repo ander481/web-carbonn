@@ -15,11 +15,12 @@ const Navigation = () => {
                     alt="CARBONN logo"
                     width={136}
                     height={47}
+                    placeholder="blurred"
                 />
                 </Link>
             </div>
             <div className={styles.right}>
-            <ul>
+            <ul className={styles.nav_list}>
                 <li>
                 <Link to="#about">About</Link>
                 </li>

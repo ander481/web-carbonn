@@ -1,0 +1,96 @@
+@import '../../assets/styles/variables';
+
+.methodology {
+    background: #949494;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left_col {
+    .methods {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.method {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    
+    .image {
+        background: $dark;
+        display: inline-block;
+        padding: 10px;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .text {
+        width: 400px;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.right_col {
+    z-index: 10;
+    position: absolute;
+    top: -500px;
+    right: 0;
+    filter: drop-shadow(-10px 17px 37px rgba(0, 0, 0, 0.25));
+}
+
+.overview {
+    position: relative;
+
+    img {
+        border-radius: 40px 0 0 40px;
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px 0 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 80px;
+
+        .title {
+            text-align: center;
+            h3 {
+                color: $white;
+            }
+        }
+
+        .descr {
+            margin-top: 50px;
+        }
+    }
+}

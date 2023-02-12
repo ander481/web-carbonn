@@ -2,6 +2,8 @@ import React from 'react'
 import * as styles from './index.module.scss'
 import { StaticImage } from 'gatsby-plugin-image'
 import Navigation from './Navigation'
+import Button from '../Button'
+import Curve from '../../assets/img/bottom_curve.svg'
 
 
 const Hero = () => {
@@ -17,7 +19,25 @@ const Hero = () => {
                 formats={['auto']}
             />
             <div className={styles.overlay} />
-            <Navigation />
+            <img className={styles.curve} src={Curve} alt='curve' />
+        </div>
+
+        <Navigation />
+
+        <div className={styles.content}>
+            <div className={styles.hero_text}>
+              <div className="container">
+                <div className={styles.title}>
+                  <h1>Alternative carbon credit project</h1>
+                  <p>Turn trash into cash and reduce your carbon footprint with investing in a sustainable future</p>
+
+                  <Button
+                    text='Learn more'
+                    link='/'
+                  />
+                </div>
+              </div>
+            </div>
         </div>
         
     </header>
