@@ -1,0 +1,62 @@
+@import '../../assets/styles/variables';
+
+.roadmap {
+    background: $black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+
+.loader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .title {
+        margin-right: 50px;
+
+        h2 {
+            color: $white;
+        }
+        
+    }
+
+    .line {
+        height: 5px;
+        background-color: #516D22;
+        width: 100%;
+    }
+}
+
+.steps {
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.step {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .milestone {
+        margin-right: 20px;
+        p {
+            color: $light;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}

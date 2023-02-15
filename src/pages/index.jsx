@@ -5,6 +5,8 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Methodology from "../components/Methodology"
 import Difference from "../components/Difference"
+import Roadmap from "../components/Roadmap"
+import Team from "../components/Team"
 
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
       <About />
       <Methodology />
       <Difference />
+      <Roadmap />
+      <Team />
     </main>
   )
 }
