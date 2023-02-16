@@ -32,7 +32,7 @@ const Navigation = () => {
 
 
   return (
-    <nav className={colorChange ? styles.navigation : styles.navigation}>
+    <nav className={colorChange ? `${styles.navigation} ${styles.active}` : styles.navigation}>
       <div className="container">
         <div className={styles.nav_content}>
             <div className={styles.brand}>
@@ -46,7 +46,7 @@ const Navigation = () => {
                   />
                 </Link>
             </div>
-            <div className={displayList ? styles.right : styles.right}>
+            <div className={displayList ? `${styles.right}` : `${styles.right} ${styles.hidden}`}>
               <ul className={styles.nav_list}>
                   <li>
                   <Link to="#about">About</Link>

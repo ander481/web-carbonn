@@ -70,7 +70,7 @@
     }
 
     .overlay {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 0;
         width: 100%;
@@ -91,6 +91,31 @@
 
         .descr {
             margin-top: 50px;
+
+            p {
+                color: $light;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $xl) {
+    .methodology {
+        padding-top: 400px;
+    }
+
+    .left_col {
+        .methods {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .method {
+        justify-content: space-between;
+        .text {
+            width: 300px;
         }
     }
 }

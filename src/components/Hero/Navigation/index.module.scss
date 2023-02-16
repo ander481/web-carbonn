@@ -46,6 +46,7 @@
 
 .menu {
     cursor: pointer;
+    display: none;
     img {
         display: block;
         height: 40px;
@@ -58,5 +59,21 @@
     img:hover {
         filter: brightness(0) invert(1);
         transition: 0.2s ease-out;
+    }
+}
+
+.navigation.active {
+    background: $black;
+    opacity: 0.8;
+}
+
+
+@media only screen and (max-width: $s) {
+	.menu {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
     }
 }

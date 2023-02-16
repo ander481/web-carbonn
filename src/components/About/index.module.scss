@@ -86,6 +86,10 @@
             display: block;
             display: list-item;
             list-style-position: inside;
+
+            p {
+                margin-top: 10px;
+            }
         }
 
         li::marker {
@@ -97,7 +101,7 @@
         display: block;
         margin-top: 28px;
         padding: 0 30px;
-        line-height: 40px;
+        line-height: 30px;
     }
 }
 
@@ -108,5 +112,39 @@
 
     .curve {
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: $xl) {
+	.dash {
+        display: none;
+    }
+
+    .descr {
+        p {
+            width: 80%;
+        }
+    }
+
+    .col_left, .col_right {
+        width: 470px;
+    }
+}
+
+@media only screen and (max-width: $l) {
+
+    .descr {
+        p {
+            width: 70%;
+        }
+    }
+
+    .col_left, .col_right {
+        width: 400px;
+    }
+
+    h3 {
+        font-size: 28px;
     }
 }
